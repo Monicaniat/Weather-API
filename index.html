@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">☁</div>
+                <div class="logo-text">
+                    <span class="logo-title">Weather</span>
+                    <span class="logo-subtitle">tagline goes here</span>
+                </div>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#" class="nav-link active">Home</a>
+                <a href="#" class="nav-link">News</a>
+                <a href="#" class="nav-link">Live cameras</a>
+                <a href="#" class="nav-link">Photos</a>
+                <a href="#" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main App Container -->
+    <div class="app-container">
+        <div class="container">
+            <!-- Search Section -->
+            <div class="search-section">
+                <div class="search-container">
+                    <input type="text" id="search" placeholder="Find your location..." />
+                    <button class="search-btn">Find</button>
+                </div>
+            </div>
+
+            <!-- Weather Cards Section -->
+            <div class="weather-cards">
+                <!-- Today's Weather Card -->
+                <div class="weather-card today-card">
+                    <div class="card-header">
+                        <span id="today_date_day_name" class="day-name">Friday</span>
+                        <span class="date-info">
+                            <span id="today_date_day_number">19</span>
+                            <span id="today_date_month">September</span>
+                        </span>
+                    </div>
+                    <div class="card-content">
+                        <div class="location">
+                            <span id="today_location">Cairo</span>
+                        </div>
+                        <div class="temperature-section">
+                            <div class="main-temp">
+                                <span id="today_temp">27.1</span>
+                                <span class="temp-unit">°C</span>
+                            </div>
+                            <div class="weather-icon">
+                                <img id="today_condition_img" src="" alt="weather condition" />
+                            </div>
+                        </div>
+                        <div class="condition-text">
+                            <span id="today_condition_text">Clear</span>
+                        </div>
+                        <div class="weather-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">💧</span>
+                                <span id="humidity">20%</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">💨</span>
+                                <span id="wind">18km/h</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">🧭</span>
+                                <span id="wind_direction">East</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tomorrow's Weather Card -->
+                <div class="weather-card forecast-card">
+                    <div class="card-header forecast-header">
+                        <span class="next-day-name">Saturday</span>
+                    </div>
+                    <div class="card-content forecast-content">
+                        <div class="forecast-icon">
+                            <span class="weather-emoji">☀️</span>
+                        </div>
+                        <div class="forecast-temps">
+                            <div class="max-temp">
+                                <span class="next_max_temp">33.6</span>°C
+                            </div>
+                            <div class="min-temp">
+                                <span class="next_min_temp">23.4</span>°
+                            </div>
+                        </div>
+                        <div class="forecast-condition">
+                            <span class="next_condition_text">Sunny</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day After Tomorrow's Weather Card -->
+                <div class="weather-card forecast-card">
+                    <div class="card-header forecast-header">
+                        <span class="day-after-name">Sunday</span>
+                    </div>
+                    <div class="card-content forecast-content">
+                        <div class="forecast-icon">
+                            <span class="weather-emoji">☀️</span>
+                        </div>
+                        <div class="forecast-temps">
+                            <div class="max-temp">
+                                <span class="day_after_max_temp">33.9</span>°C
+                            </div>
+                            <div class="min-temp">
+                                <span class="day_after_min_temp">22.5</span>°
+                            </div>
+                        </div>
+                        <div class="forecast-condition">
+                            <span class="day_after_condition_text">Sunny</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="newsletter">
+                <input type="email" placeholder="Enter your email to subscribe..." />
+                <button class="subscribe-btn">Subscribe</button>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="index.js"></script>
+</body>
+
+</html>
